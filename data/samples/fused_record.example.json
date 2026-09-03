@@ -1,0 +1,65 @@
+{
+  "unit_id": "T-MEX-1917-027-a",
+  "source": {
+    "corpus": "constitute",
+    "constitute_id": "Mexico_2015",
+    "ccp_systid": null,
+    "article": 27,
+    "clause": "a",
+    "span": [
+      0,
+      118
+    ]
+  },
+  "ontology_commitment": {
+    "domain": "economic",
+    "register_mode": "who_controls_inscription",
+    "object_type": "social"
+  },
+  "coding_decision": {
+    "sq": "SQ3",
+    "code": "community_to_individual",
+    "coders": [
+      "LB",
+      "CODER-2"
+    ],
+    "codebook_version": "0.3.0",
+    "codebook_hash": "<sha256>",
+    "alpha": 0.81,
+    "grade": "conclusion"
+  },
+  "human_interpretation": {
+    "text": "The 1992 reform shifts control of the economic register without changing who is inscribed.",
+    "author": "LB",
+    "state": "interpretation"
+  },
+  "revision_events": [
+    {
+      "date": "<iso-date>",
+      "freeze": "F1",
+      "from": null,
+      "to": "formal_amendment",
+      "reason": "no change of subject"
+    },
+    {
+      "date": "<iso-date>",
+      "freeze": "F2",
+      "from": "formal_amendment",
+      "to": "reinscription",
+      "reason": "codebook 0.3.0 added 'who controls' as a criterion"
+    }
+  ],
+  "lineage": [
+    "constitute/raw",
+    "segment(article,clause)",
+    "code(SQ1-SQ5)",
+    "alpha(pass 2)",
+    "promote(ccp_layer)"
+  ],
+  "evidence_ids": [
+    "E-0412",
+    "E-0413",
+    "CB-0.3.0"
+  ],
+  "normative_claims": "forbidden_here"
+}
