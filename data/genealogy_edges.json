@@ -1,0 +1,138 @@
+{
+  "$schema": "../schemas/genealogy_edges.schema.json",
+  "status": "seed",
+  "edges": [
+    {
+      "source": "Liberalismo clásico",
+      "target": "Socioliberalismo",
+      "edge_type": "evolución",
+      "century": "XIX"
+    },
+    {
+      "source": "Liberalismo clásico",
+      "target": "Neoliberalismo",
+      "edge_type": "evolución",
+      "century": "XX"
+    },
+    {
+      "source": "Liberalismo clásico",
+      "target": "Ordoliberalismo",
+      "edge_type": "evolución",
+      "century": "XX"
+    },
+    {
+      "source": "Liberalismo clásico",
+      "target": "Libertarismo",
+      "edge_type": "derivación",
+      "century": "XX"
+    },
+    {
+      "source": "Libertarismo",
+      "target": "Anarcocapitalismo",
+      "edge_type": "derivación",
+      "century": "XX"
+    },
+    {
+      "source": "Socialismo utópico",
+      "target": "Marxismo",
+      "edge_type": "evolución",
+      "century": "XIX"
+    },
+    {
+      "source": "Marxismo",
+      "target": "Marxismo-leninismo",
+      "edge_type": "derivación",
+      "century": "XX"
+    },
+    {
+      "source": "Marxismo-leninismo",
+      "target": "Estalinismo",
+      "edge_type": "derivación",
+      "century": "XX"
+    },
+    {
+      "source": "Marxismo-leninismo",
+      "target": "Maoísmo",
+      "edge_type": "derivación",
+      "century": "XX"
+    },
+    {
+      "source": "Marxismo-leninismo",
+      "target": "Titoísmo",
+      "edge_type": "derivación",
+      "century": "XX"
+    },
+    {
+      "source": "Marxismo",
+      "target": "Socialdemocracia",
+      "edge_type": "revisión (Bernstein)",
+      "century": "XIX-XX"
+    },
+    {
+      "source": "Marxismo-leninismo",
+      "target": "Eurocomunismo",
+      "edge_type": "revisión",
+      "century": "XX"
+    },
+    {
+      "source": "Anarquismo",
+      "target": "Mutualismo",
+      "edge_type": "corriente",
+      "century": "XIX"
+    },
+    {
+      "source": "Anarquismo",
+      "target": "Colectivismo anarquista",
+      "edge_type": "corriente",
+      "century": "XIX"
+    },
+    {
+      "source": "Anarquismo",
+      "target": "Anarcocomunismo",
+      "edge_type": "corriente",
+      "century": "XIX-XX"
+    },
+    {
+      "source": "Anarquismo",
+      "target": "Anarcosindicalismo",
+      "edge_type": "corriente",
+      "century": "XIX-XX"
+    },
+    {
+      "source": "Conservadurismo clásico",
+      "target": "Paleoconservadurismo",
+      "edge_type": "derivación",
+      "century": "XX"
+    },
+    {
+      "source": "Conservadurismo clásico",
+      "target": "Neoconservadurismo",
+      "edge_type": "derivación",
+      "century": "XX"
+    },
+    {
+      "source": "Nacionalismo",
+      "target": "Nacionalismo cívico",
+      "edge_type": "variante",
+      "century": "XVIII-XIX"
+    },
+    {
+      "source": "Nacionalismo",
+      "target": "Nacionalismo étnico",
+      "edge_type": "variante",
+      "century": "XIX"
+    },
+    {
+      "source": "Fascismo",
+      "target": "Nazismo",
+      "edge_type": "variante",
+      "century": "XX"
+    },
+    {
+      "source": "Fascismo",
+      "target": "Falangismo",
+      "edge_type": "variante",
+      "century": "XX"
+    }
+  ]
+}

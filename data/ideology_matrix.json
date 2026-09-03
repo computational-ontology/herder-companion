@@ -1,0 +1,345 @@
+{
+  "$schema": "../schemas/ideology_matrix.schema.json",
+  "codebook_version": "0.1.0",
+  "language": "es",
+  "status": "exploratory — single-coder first pass; not a canonical reading",
+  "ideologies": [
+    {
+      "id": 1,
+      "family": "Liberalismo clásico y social",
+      "origin_century": "XVII-XIX",
+      "domain_of_gravity": "Económico",
+      "domains_colonised": [
+        "Político",
+        "Biológico"
+      ],
+      "a_core": "El individuo autónomo y sus derechos como punto de partida; libertad como no-interferencia",
+      "dominant_form": "Inclusiva (tendencial)",
+      "inscription_medium": "Imprenta, prensa",
+      "register": {
+        "SQ1_who_counts": "El individuo-ciudadano portador de derechos; membresía por ciudadanía y capacidad jurídica",
+        "SQ2_valid_document": "El contrato y el derecho subjetivo; la ley general y el registro de propiedad",
+        "SQ3_who_controls": "Inscripción repartida entre individuo y Estado de derecho (garante, no dueño)",
+        "SQ4_cooperation_or_domination": "Inclusiva-formal (universalismo jurídico), con sesgo censitario histórico",
+        "SQ5_naturalises": "Naturaliza al individuo pre-social y sus derechos como dados, siendo una construcción histórica"
+      },
+      "ccp_footprint": {
+        "domains": "Económico / Político",
+        "variable_families": "Derechos de propiedad; libertad de empresa; derechos civiles; separación de poderes; sufragio",
+        "expected_signal": "Expansión de derechos civiles y de propiedad; límites al Estado"
+      },
+      "coding_status": "exploratory",
+      "alpha": null,
+      "codebook_version": "0.1.0"
+    },
+    {
+      "id": 2,
+      "family": "Neoliberalismo / libertarismo",
+      "origin_century": "XX",
+      "domain_of_gravity": "Económico",
+      "domains_colonised": [
+        "Político",
+        "Cultural",
+        "Biológico"
+      ],
+      "a_core": "El mercado autorregulado como orden natural y eficiente ('no hay alternativa')",
+      "dominant_form": "Ambivalente (excluye por despolitización)",
+      "inscription_medium": "Medios de masas → digital",
+      "register": {
+        "SQ1_who_counts": "El agente-empresario de sí; membresía económica vía solvencia / scoring",
+        "SQ2_valid_document": "El contrato privado, el precio y el score crediticio; el dato como capital documedial",
+        "SQ3_who_controls": "El mercado y las plataformas privadas controlan la inscripción (asimetría movilizantes/movilizados)",
+        "SQ4_cooperation_or_domination": "Excluyente por despolitización (quien no puntúa, no cuenta)",
+        "SQ5_naturalises": "Naturaliza el mercado autorregulado como orden espontáneo in-enmendable ('no hay alternativa')"
+      },
+      "ccp_footprint": {
+        "domains": "Económico",
+        "variable_families": "Protección de la propiedad; disciplina fiscal; independencia de banca central; (débil en derechos sociales)",
+        "expected_signal": "Blindaje de mercado; contracción de derechos socioeconómicos"
+      },
+      "coding_status": "exploratory",
+      "alpha": null,
+      "codebook_version": "0.1.0"
+    },
+    {
+      "id": 3,
+      "family": "Socialismo / Marxismo",
+      "origin_century": "XIX (1848)",
+      "domain_of_gravity": "Económico",
+      "domains_colonised": [
+        "Político",
+        "Cultural"
+      ],
+      "a_core": "La historia como lucha de clases; la propiedad de los medios como raíz de la dominación",
+      "dominant_form": "Inclusiva (aspiración) / Monopólica (variante estatista)",
+      "inscription_medium": "Prensa obrera, partido",
+      "register": {
+        "SQ1_who_counts": "La clase trabajadora / el pueblo productor; membresía por posición en la producción",
+        "SQ2_valid_document": "El plan, la titularidad colectiva; crítica del título de propiedad como inscripción de dominación",
+        "SQ3_who_controls": "Disputa por arrebatar a la burguesía el control de la inscripción; en variante estatista lo monopoliza el partido",
+        "SQ4_cooperation_or_domination": "Inclusiva en aspiración; monopólica en la variante estatista (partido único)",
+        "SQ5_naturalises": "Riesgo simétrico: naturalizar las 'leyes de la historia' y la inevitabilidad del desenlace"
+      },
+      "ccp_footprint": {
+        "domains": "Económico / Político",
+        "variable_families": "Propiedad estatal/colectiva; función social de la propiedad; derecho al trabajo",
+        "expected_signal": "Función social de la propiedad; derechos económicos fuertes"
+      },
+      "coding_status": "exploratory",
+      "alpha": null,
+      "codebook_version": "0.1.0"
+    },
+    {
+      "id": 4,
+      "family": "Socialdemocracia",
+      "origin_century": "fin. XIX",
+      "domain_of_gravity": "Político",
+      "domains_colonised": [
+        "Económico",
+        "Biológico"
+      ],
+      "a_core": "La libertad efectiva exige derechos sociales; mercado + redistribución",
+      "dominant_form": "Inclusiva",
+      "inscription_medium": "Prensa de masas, sindicato",
+      "register": {
+        "SQ1_who_counts": "El ciudadano social; membresía ensanchada por derechos sociales (trabajo, salud, educación)",
+        "SQ2_valid_document": "El derecho social codificado, el contrato laboral, la seguridad social",
+        "SQ3_who_controls": "Inscripción negociada: Estado + sindicatos + mercado (concertación)",
+        "SQ4_cooperation_or_domination": "Inclusiva",
+        "SQ5_naturalises": "Riesgo bajo: naturalizar el crecimiento como condición del pacto redistributivo"
+      },
+      "ccp_footprint": {
+        "domains": "Económico / Biológico",
+        "variable_families": "Derechos socioeconómicos: salud, educación, seguridad social, trabajo",
+        "expected_signal": "Densidad de derechos sociales codificados"
+      },
+      "coding_status": "exploratory",
+      "alpha": null,
+      "codebook_version": "0.1.0"
+    },
+    {
+      "id": 5,
+      "family": "Anarquismo",
+      "origin_century": "XIX",
+      "domain_of_gravity": "Político",
+      "domains_colonised": [
+        "Económico",
+        "Cultural"
+      ],
+      "a_core": "Toda autoridad no consentida es ilegítima; el Estado como monopolio a abolir",
+      "dominant_form": "Inclusiva (horizontal)",
+      "inscription_medium": "Prensa libertaria, red",
+      "register": {
+        "SQ1_who_counts": "La persona libre en asociación voluntaria; membresía por adhesión revocable",
+        "SQ2_valid_document": "El acuerdo mutuo y el crédito mutuo; rechazo del registro estatal como acto de autoridad",
+        "SQ3_who_controls": "Nadie monopoliza: inscripción distribuida, horizontal, sin Estado",
+        "SQ4_cooperation_or_domination": "Inclusiva-horizontal",
+        "SQ5_naturalises": "Naturaliza la bondad de la cooperación espontánea sin coacción"
+      },
+      "ccp_footprint": {
+        "domains": "Político",
+        "variable_families": "(Huella negativa) descentralización; autonomía local; subsidiariedad",
+        "expected_signal": "Raramente inscrito en constituciones estatales; señal indirecta"
+      },
+      "coding_status": "exploratory",
+      "alpha": null,
+      "codebook_version": "0.1.0"
+    },
+    {
+      "id": 6,
+      "family": "Conservadurismo",
+      "origin_century": "XVIII (Burke)",
+      "domain_of_gravity": "Cultural",
+      "domains_colonised": [
+        "Político",
+        "Biológico"
+      ],
+      "a_core": "La tradición y las instituciones heredadas como sabiduría acumulada; cambio gradual",
+      "dominant_form": "Ambivalente",
+      "inscription_medium": "Institución, archivo",
+      "register": {
+        "SQ1_who_counts": "El miembro de la comunidad histórica heredada; pertenencia por continuidad y arraigo",
+        "SQ2_valid_document": "El documento heredado y autoritativo: tradición, costumbre, texto fundacional, lo sagrado",
+        "SQ3_who_controls": "Las instituciones establecidas (Iglesia, familia, cuerpos intermedios) custodian la inscripción",
+        "SQ4_cooperation_or_domination": "Ambivalente (inclusiva hacia dentro; resistente al reconocimiento nuevo)",
+        "SQ5_naturalises": "Naturaliza el orden heredado y sus jerarquías como orden natural o providencial"
+      },
+      "ccp_footprint": {
+        "domains": "Cultural / Biológico",
+        "variable_families": "Religión oficial / referencia a Dios; familia y matrimonio; educación tradicional",
+        "expected_signal": "Presencia de religión de Estado y cláusulas de familia tradicional"
+      },
+      "coding_status": "exploratory",
+      "alpha": null,
+      "codebook_version": "0.1.0"
+    },
+    {
+      "id": 7,
+      "family": "Fascismo / autoritarismo",
+      "origin_century": "XX",
+      "domain_of_gravity": "Los cuatro (dominación total)",
+      "domains_colonised": [
+        "—"
+      ],
+      "a_core": "Nación/Estado orgánico y jerárquico sobre el individuo; unidad movilizada bajo un jefe",
+      "dominant_form": "Monopólica-colapso",
+      "inscription_medium": "Radio, cine, propaganda de masas",
+      "register": {
+        "SQ1_who_counts": "El miembro del pueblo-nación orgánico fundido con el Estado; pertenencia por lealtad al todo",
+        "SQ2_valid_document": "El acto de lealtad y el registro biopolítico (censo; en el nazismo, racial-biométrico)",
+        "SQ3_who_controls": "El Estado/partido/jefe monopoliza absolutamente la inscripción; colapso del meta-registro",
+        "SQ4_cooperation_or_domination": "Monopólica-colapso",
+        "SQ5_naturalises": "Naturaliza la jerarquía y, en el nazismo, la raza como sustrato biológico in-enmendable (falacia armada)"
+      },
+      "ccp_footprint": {
+        "domains": "Político / Cultural / Biológico",
+        "variable_families": "Provisiones de emergencia amplias; poderes concentrados; partido único; nación orgánica en preámbulo; (nazismo) cláusulas racializadas",
+        "expected_signal": "Concentración de poder; emergencia ensanchada; ciudadanía restringida"
+      },
+      "coding_status": "exploratory",
+      "alpha": null,
+      "codebook_version": "0.1.0"
+    },
+    {
+      "id": 8,
+      "family": "Nacionalismo cívico",
+      "origin_century": "XVIII-XIX",
+      "domain_of_gravity": "Cultural",
+      "domains_colonised": [
+        "Político"
+      ],
+      "a_core": "La nación como comunidad de ciudadanía, instituciones y valores compartidos",
+      "dominant_form": "Inclusiva",
+      "inscription_medium": "Imprenta → documedialidad",
+      "register": {
+        "SQ1_who_counts": "El conciudadano definido por ciudadanía, instituciones y valores compartidos",
+        "SQ2_valid_document": "La constitución, el padrón de ciudadanía, el ius soli y los derechos",
+        "SQ3_who_controls": "El Estado democrático de derecho como garante inclusivo",
+        "SQ4_cooperation_or_domination": "Inclusiva",
+        "SQ5_naturalises": "Riesgo bajo: naturalizar la propia comunidad política como horizonte último"
+      },
+      "ccp_footprint": {
+        "domains": "Político / Cultural",
+        "variable_families": "Ciudadanía por ius soli; preámbulo cívico; igualdad ante la ley",
+        "expected_signal": "Pertenencia inclusiva; ciudadanía territorial"
+      },
+      "coding_status": "exploratory",
+      "alpha": null,
+      "codebook_version": "0.1.0"
+    },
+    {
+      "id": 9,
+      "family": "Nacionalismo étnico",
+      "origin_century": "XIX",
+      "domain_of_gravity": "Cultural",
+      "domains_colonised": [
+        "Político",
+        "Biológico"
+      ],
+      "a_core": "La nación como comunidad de origen, lengua y ascendencia; pertenencia por sangre",
+      "dominant_form": "Excluyente",
+      "inscription_medium": "Imprenta, prensa → redes",
+      "register": {
+        "SQ1_who_counts": "El connacional de origen, lengua y ascendencia común; excluye a quien no comparte el linaje",
+        "SQ2_valid_document": "El censo étnico-lingüístico, el ius sanguinis, el mito de origen",
+        "SQ3_who_controls": "El grupo dominante controla quién se inscribe como nacional",
+        "SQ4_cooperation_or_domination": "Excluyente",
+        "SQ5_naturalises": "Naturaliza la nación (sangre/lengua) como hecho pre-político in-enmendable — caso ontológico central del libro"
+      },
+      "ccp_footprint": {
+        "domains": "Cultural",
+        "variable_families": "Lengua oficial única; religión de Estado; ciudadanía por ius sanguinis; reconocimiento negado a minorías",
+        "expected_signal": "Monopolio de lengua/identidad; ciudadanía por linaje"
+      },
+      "coding_status": "exploratory",
+      "alpha": null,
+      "codebook_version": "0.1.0"
+    },
+    {
+      "id": 10,
+      "family": "Feminismos",
+      "origin_century": "XIX-XX",
+      "domain_of_gravity": "Biológico",
+      "domains_colonised": [
+        "Cultural",
+        "Económico",
+        "Político"
+      ],
+      "a_core": "El orden de género (patriarcado) como estructura de dominación a desmontar",
+      "dominant_form": "Inclusiva",
+      "inscription_medium": "Prensa, red",
+      "register": {
+        "SQ1_who_counts": "El sujeto sexuado antes invisibilizado; membresía plena con independencia del género",
+        "SQ2_valid_document": "El registro biopolítico reabierto (cuerpo, familia, reproducción): igualdad, derechos reproductivos",
+        "SQ3_who_controls": "Disputa por quién inscribe el cuerpo y la familia (Estado, medicina, familia patriarcal)",
+        "SQ4_cooperation_or_domination": "Inclusiva",
+        "SQ5_naturalises": "Denuncia la naturalización del patriarcado (el género presentado como naturaleza siendo estructura)"
+      },
+      "ccp_footprint": {
+        "domains": "Biológico",
+        "variable_families": "Igualdad de género; no discriminación por sexo; derechos reproductivos",
+        "expected_signal": "Ensanchamiento del registro biopolítico"
+      },
+      "coding_status": "exploratory",
+      "alpha": null,
+      "codebook_version": "0.1.0"
+    },
+    {
+      "id": 11,
+      "family": "Ecologismo / ecología profunda",
+      "origin_century": "XX",
+      "domain_of_gravity": "Biológico",
+      "domains_colonised": [
+        "Económico",
+        "Cultural",
+        "Político"
+      ],
+      "a_core": "La biosfera y la vida no humana con valor intrínseco; límites materiales del crecimiento",
+      "dominant_form": "Inclusiva (ensancha el demos)",
+      "inscription_medium": "Medios, red",
+      "register": {
+        "SQ1_who_counts": "Extiende la pertenencia más allá de lo humano: la vida no humana como titular de standing",
+        "SQ2_valid_document": "Los derechos de la naturaleza; el registro de límites materiales (ecológicos)",
+        "SQ3_who_controls": "Disputa por inscribir a los no-humanos y a las generaciones futuras como sujetos",
+        "SQ4_cooperation_or_domination": "Inclusiva (ensancha el demos)",
+        "SQ5_naturalises": "Sutileza reflexiva: afirmar 'valor intrínseco' roza el lado del 'ser'; declarar si es tesis ontológica o compromiso normativo"
+      },
+      "ccp_footprint": {
+        "domains": "Biológico / Cultural",
+        "variable_families": "Cláusulas ambientales; derechos de la naturaleza; desarrollo sostenible",
+        "expected_signal": "Aparición de derechos de la naturaleza / provisiones ambientales"
+      },
+      "coding_status": "exploratory",
+      "alpha": null,
+      "codebook_version": "0.1.0"
+    },
+    {
+      "id": 12,
+      "family": "Ideologías digitales (tecnocracia / transhumanismo / piratismo)",
+      "origin_century": "XX-XXI",
+      "domain_of_gravity": "Capa de re-inscripción (Económico/Político)",
+      "domains_colonised": [
+        "Cultural",
+        "Biológico"
+      ],
+      "a_core": "El conocimiento técnico y/o la tecnología como principio rector; el dato/acceso como bien en disputa",
+      "dominant_form": "Ambivalente (según variante)",
+      "inscription_medium": "Digital-documedialidad",
+      "register": {
+        "SQ1_who_counts": "Según variante: el experto competente / el humano aumentado / el usuario-ciudadano digital",
+        "SQ2_valid_document": "El dato, el algoritmo, el registro digital; el acceso abierto frente a la propiedad intelectual",
+        "SQ3_who_controls": "Quién controla la re-inscripción digital: plataformas, Estado técnico o comunidad abierta",
+        "SQ4_cooperation_or_domination": "Ambivalente (tecnocracia → excluyente-experto; piratismo → inclusivo-abierto)",
+        "SQ5_naturalises": "Naturaliza la neutralidad/eficiencia de la técnica, como si el registro digital no fuera político"
+      },
+      "ccp_footprint": {
+        "domains": "Re-inscripción (RQ3)",
+        "variable_families": "Derecho a la privacidad; protección de datos; acceso a la información; libertad de expresión (provisiones digitales)",
+        "expected_signal": "Provisiones digitales/datos recientes; disputa por el registro digital"
+      },
+      "coding_status": "exploratory",
+      "alpha": null,
+      "codebook_version": "0.1.0"
+    }
+  ]
+}
