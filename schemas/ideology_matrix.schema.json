@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://data.ontology360.it/schemas/ideology_matrix.schema.json",
+  "title": "Ideology \u00d7 domain \u00d7 register matrix",
+  "type": "object",
+  "required": [
+    "codebook_version",
+    "status",
+    "ideologies"
+  ],
+  "properties": {
+    "codebook_version": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "ideologies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "family",
+          "domain_of_gravity",
+          "register",
+          "ccp_footprint",
+          "coding_status"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "family": {
+            "type": "string"
+          },
+          "origin_century": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "domain_of_gravity": {
+            "type": "string"
+          },
+          "domains_colonised": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "a_core": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "dominant_form": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "inscription_medium": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "register": {
+            "type": "object",
+            "required": [
+              "SQ1_who_counts",
+              "SQ2_valid_document",
+              "SQ3_who_controls",
+              "SQ4_cooperation_or_domination",
+              "SQ5_naturalises"
+            ]
+          },
+          "ccp_footprint": {
+            "type": "object",
+            "required": [
+              "domains",
+              "variable_families",
+              "expected_signal"
+            ]
+          },
+          "coding_status": {
+            "enum": [
+              "exploratory",
+              "conclusion",
+              "blocked"
+            ]
+          },
+          "alpha": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "codebook_version": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

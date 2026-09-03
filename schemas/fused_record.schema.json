@@ -1,0 +1,269 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://data.ontology360.it/schemas/fused_record.schema.json",
+  "title": "Fused record \u2014 one object per coded unit",
+  "type": "object",
+  "required": [
+    "unit_id",
+    "source",
+    "ontology_commitment",
+    "coding_decision",
+    "human_interpretation",
+    "revision_events",
+    "lineage",
+    "evidence_ids",
+    "normative_claims"
+  ],
+  "properties": {
+    "unit_id": {
+      "type": "string",
+      "pattern": "^T-[A-Z]{3}-[0-9]{4}-[0-9]{3}-[a-z]$"
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "corpus",
+        "constitute_id",
+        "article",
+        "span"
+      ],
+      "properties": {
+        "corpus": {
+          "enum": [
+            "constitute",
+            "ccp",
+            "ideology_corpus"
+          ]
+        },
+        "constitute_id": {
+          "type": "string"
+        },
+        "ccp_systid": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "article": {
+          "type": "integer"
+        },
+        "clause": {
+          "type": "string"
+        },
+        "span": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      }
+    },
+    "ontology_commitment": {
+      "type": "object",
+      "required": [
+        "domain",
+        "register_mode",
+        "object_type"
+      ],
+      "properties": {
+        "domain": {
+          "enum": [
+            "biological",
+            "economic",
+            "political",
+            "cultural"
+          ]
+        },
+        "register_mode": {
+          "enum": [
+            "who_counts",
+            "valid_document",
+            "who_controls_inscription",
+            "cooperation_or_domination",
+            "naturalisation",
+            "temporal_scope"
+          ]
+        },
+        "object_type": {
+          "enum": [
+            "natural",
+            "ideal",
+            "social"
+          ]
+        }
+      }
+    },
+    "coding_decision": {
+      "type": "object",
+      "required": [
+        "sq",
+        "code",
+        "coders",
+        "codebook_version",
+        "alpha",
+        "grade"
+      ],
+      "properties": {
+        "sq": {
+          "enum": [
+            "SQ1",
+            "SQ2",
+            "SQ3",
+            "SQ4",
+            "SQ5"
+          ]
+        },
+        "code": {
+          "type": "string"
+        },
+        "coders": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 2
+        },
+        "codebook_version": {
+          "type": "string"
+        },
+        "codebook_hash": {
+          "type": "string"
+        },
+        "alpha": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "grade": {
+          "enum": [
+            "exploratory",
+            "conclusion",
+            "blocked"
+          ]
+        }
+      }
+    },
+    "human_interpretation": {
+      "type": "object",
+      "required": [
+        "text",
+        "author",
+        "state"
+      ],
+      "properties": {
+        "text": {
+          "type": "string"
+        },
+        "author": {
+          "type": "string"
+        },
+        "state": {
+          "const": "interpretation"
+        }
+      }
+    },
+    "revision_events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "date",
+          "freeze",
+          "to",
+          "reason"
+        ],
+        "properties": {
+          "date": {
+            "type": "string"
+          },
+          "freeze": {
+            "enum": [
+              "F1",
+              "F2"
+            ]
+          },
+          "from": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "to": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "lineage": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "normative_claims": {
+      "const": "forbidden_here",
+      "description": "Normative claims never live in a record; they are the author's, marked, in the text."
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "coding_decision": {
+            "properties": {
+              "alpha": {
+                "minimum": 0.8
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "coding_decision": {
+            "properties": {
+              "grade": {
+                "const": "conclusion"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "coding_decision": {
+            "properties": {
+              "alpha": {
+                "exclusiveMaximum": 0.67
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "coding_decision": {
+            "properties": {
+              "grade": {
+                "const": "blocked"
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://data.ontology360.it/schemas/genealogy_edges.schema.json",
+  "title": "Genealogy / diffusion edges",
+  "type": "object",
+  "required": [
+    "status",
+    "edges"
+  ],
+  "properties": {
+    "status": {
+      "type": "string"
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "source",
+          "target",
+          "edge_type"
+        ],
+        "properties": {
+          "source": {
+            "type": "string"
+          },
+          "target": {
+            "type": "string"
+          },
+          "edge_type": {
+            "type": "string"
+          },
+          "century": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
