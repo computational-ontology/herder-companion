@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Cite the concept DOI once released; until then cite the repository."
+title: "Companion data of La Constitución en la era digital (ideology × domain × register matrix)"
+type: dataset
+version: 0.1.0-exploratory
+authors:
+  - family-names: Bourguet
+    given-names: Luis
+    orcid: "https://orcid.org/0000-0002-4673-4486"
+    affiliation: "LabOnt — Centre for Ontology, Università degli Studi di Torino"
+repository-code: "https://github.com/computational-ontology/herder-companion"
+url: "https://data.ontology360.it"
+license: CC-BY-4.0
